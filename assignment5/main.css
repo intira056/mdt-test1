@@ -1,0 +1,12 @@
+h1{
+    font-family: verdana;
+    font-size: 40px;
+    color: aliceblue;
+}
+.bg-image {
+    background-image: url("pic5/kuroo1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
