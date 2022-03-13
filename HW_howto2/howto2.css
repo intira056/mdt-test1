@@ -1,0 +1,157 @@
+h1{
+    text-align: center;
+    color: #fff;
+    background-color: #AEB496;
+    border: 5px solid rgb(255, 255, 255); 
+    padding: 10px;
+}
+
+h3{
+        color: #fff;
+        background-color: #AEB496;
+        
+}
+
+body {
+    font-family: Helvetica Neue,Helvetica,Thonburi,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #DBDDD2;
+}
+
+
+div{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+}
+
+.flex_pic{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+}
+
+.flex_pic > div{
+    border:2px;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center; }
+
+.p{
+        text-align: left;
+    }
+
+.p > div{
+    text-align: left;
+}
+
+
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #AEB496;
+    padding: 10px;
+    grid-gap: 10px;
+}
+  
+  
+.grid-item 
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(136, 165, 124, 0.904);
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#header{
+    grid-column: 1 / span 3;
+}
+
+#menu{
+    grid-column: 1 / span 1;
+}
+
+#main{
+    grid-column: 2 / span 1;
+}
+#right{
+    grid-column: 3 / span 1;
+}
+
+#footer{
+    grid-column: 1 / span 3;
+} 
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 2;
+    }
+    
+    #menu{
+        grid-column: 1 / span 2;
+        text-align: left;
+    }
+    
+    #menu div{
+        display: inline-block;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 2 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 2;
+    }
+} 
+
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    
+    #menu{
+        grid-column: 1 / span 1;
+    }
+    
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+    }
+}  
+
+
+       
+    
+    
+
+
+     
